@@ -12,7 +12,7 @@ function tudoMaiusculo(nome_minusculo) {
 console.log("Mudar tudo para Maiusculo: " + tudoMaiusculo(nome_minusculo));
 
 
-
+// ********************************************************
 // ********** FUNÇÃO PARA AS PRIMEIRAS LETRAS MAÍUSCULAS **********\\
 function primeiraMaiuscula(nome_minusculo) {
     var texto = nome_minusculo.toLowerCase().split(" ");
