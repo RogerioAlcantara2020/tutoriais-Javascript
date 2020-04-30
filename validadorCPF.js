@@ -37,19 +37,5 @@ function validaCPF(cpf) {
     return true;
 }
 
-
-function validacao() {
-
-    var cpf = document.getElementById("txtCPF").value;
-
-    document.getElementById("error").style.display = "none";
-    document.getElementById("success").style.display = "none";
-
-    var resultadoValidacao = validaCPF(cpf);
-
-    if (resultadoValidacao) {
-        document.getElementById("success").style.display = "block";
-    } else {
-        document.getElementById("error").style.display = "block"
-    }
-}
+//SE TUDO DER CERTO O RESULTADO SERÁ TRUE
+// OU SEJA O CPF É VÁLIDO E O SISTEMA PODERÁ CONTINUAR O CADASTRO
