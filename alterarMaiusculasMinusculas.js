@@ -1,7 +1,8 @@
 var nome_minusculo = "todo esse texto será alterado na minha função";
 var nome_maisculo = "TODO ESSE TEXTO SERÁ ALTERADO NA MINHA FUNÇÃO";
-// ********** FUNÇÃO PARA TODAS AS LETRAS MAÍUSCULAS **********\\
 
+
+// ********** FUNÇÃO PARA TODAS AS LETRAS MAÍUSCULAS **********\\
 function tudoMaiusculo(nome_minusculo) {
     nome = nome_minusculo.toUpperCase();
     return nome;
@@ -13,7 +14,6 @@ console.log("Mudar tudo para Maiusculo: " + tudoMaiusculo(nome_minusculo));
 
 
 // ********** FUNÇÃO PARA AS PRIMEIRAS LETRAS MAÍUSCULAS **********\\
-
 function primeiraMaiuscula(nome_minusculo) {
     var texto = nome_minusculo.toLowerCase().split(" ");
     var fatia;
@@ -32,7 +32,7 @@ console.log("Mudar primeira letra para Maiusculo: " + primeiraMaiuscula(nome));
 
 function todasMinusculas(nome_maisculo) {
     var texto = nome_maisculo.toLowerCase();
-    return texto;    
+    return texto;
 }
 //USANDO A FUNÇÃO todasMinusculas
 console.log("Mudar tudo para Minusculo: " + todasMinusculas(nome));
