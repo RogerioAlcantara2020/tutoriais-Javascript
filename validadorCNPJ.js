@@ -8,18 +8,17 @@ function validaCNPJ(cnpj) {
     var pos = tamanho - 7;
     var resultado;
 
-    var metadeInicial =cnpj.substring(0,7);
+    var metadeInicial = cnpj.substring(0, 7);
     var metadeFinal = cnpj.substring(7);
 
-    if( metadeInicial == metadeFinal){  
-      return false;
+    if (metadeInicial == metadeFinal) {
+        return false;
     }
 
     if (cnpj.length != 14) {
         return false;
     }
 
-  
 
     for (var i = tamanho; i >= 1; i--) {
         soma += numeros.charAt(tamanho - i) * pos--;
@@ -33,7 +32,6 @@ function validaCNPJ(cnpj) {
     if (resultado != digitos.charAt(0)) {
         return false;
     }
-
 
     tamanho = tamanho + 1;
     numeros = cnpj.substring(0, tamanho);
@@ -54,8 +52,6 @@ function validaCNPJ(cnpj) {
     if (resultado != digitos.charAt(1)) {
         return false;
     }
-
-
 
     return true;
 }
